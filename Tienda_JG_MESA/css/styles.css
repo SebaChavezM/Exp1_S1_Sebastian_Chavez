@@ -1,0 +1,206 @@
+* {
+    font-family: system-ui;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Estilos para el navbar */
+nav {
+    background-color: #333;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Ajusta el margen derecho */
+}
+
+.nav-links a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6B6B;
+}
+
+
+
+/* Estilos para el encabezado */
+header {
+    margin: auto;
+    color: #333333;
+    padding: 2em;
+    text-align: center;
+    font-size: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para la sección introductoria */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    background: linear-gradient(45deg, #125ea5 50%, #ffffff 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.intro-text h2 {
+    color: #ffffff;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para las categorías */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    width: 250px;
+    background-color: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+.category a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.category h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 2em 0;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 5%;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto 1em; /* Reducir el espacio inferior */
+}
+
+.contact h2 {
+    color: #FF6B6B;
+    font-size: 1.2em; /* Aumentar el tamaño de fuente */
+    margin-bottom: 0.5em; /* Reducir el espacio inferior */
+}
+
+.contact p {
+    font-size: 1em; /* Reducir el tamaño de fuente */
+    margin-bottom: 0.5em;
+}
+
+.contact strong {
+    color: #FF6B6B;
+}
+
+footer p {
+    margin: 0.5em 0; /* Reducir el espacio alrededor de los párrafos */
+}
+
+footer p a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer p a:hover {
+    color: #FF6B6B;
+}
+
+
+/* Media Queries para la responsividad */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        padding-right: 0;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .game {
+        width: 95%;
+    }
+}
